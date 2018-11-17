@@ -116,6 +116,7 @@
           <el-input-number v-model="dataForm.marketRefPrice"  style="width: 300px;" :precision="3" :step="1" controls-position="right"  :min="0">
           </el-input-number>
         </el-form-item>
+        
         <el-form-item label="规格" prop="specs">
           <el-input
             type="textarea"
