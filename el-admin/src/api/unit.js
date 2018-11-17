@@ -38,3 +38,10 @@ export function deleteUnit(id) {
     method: 'delete'
   })
 }
+
+export function all() {
+  return request({
+    url: '/api/v1/unit/all',
+    method: 'get'
+  })
+}

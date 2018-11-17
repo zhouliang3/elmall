@@ -38,3 +38,10 @@ export function deleteSupplier(id) {
     method: 'delete'
   })
 }
+
+export function all() {
+  return request({
+    url: '/api/v1/supplier/all',
+    method: 'get'
+  })
+}

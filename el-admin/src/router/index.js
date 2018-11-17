@@ -52,17 +52,18 @@ export default new Router({
 
 export const asyncRouterMap = [
   {
-    path: '/supplier',
+    path: '/purchasing',
     component: Layout,
     redirect: 'noredirect',
-    name: 'supplier',
+    name: 'purchasing',
     meta: {
       title: '采购管理',
       icon: 'chart'
     },
     alwaysShow: true,
     children: [
-      { path: 'list', component: _import('supplier/supplierList'), name: 'supplierList', meta: { title: '供应商', noCache: true }}
+      { path: 'supplier', component: _import('supplier/supplierList'), name: 'supplierList', meta: { title: '供应商列表', noCache: true }},
+      { path: 'material', component: _import('supplier/material'), name: 'material', meta: { title: '物料列表', noCache: true }}
     ]
   },
   {

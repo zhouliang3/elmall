@@ -38,3 +38,10 @@ export function deleteMaterialType(id) {
     method: 'delete'
   })
 }
+
+export function all() {
+  return request({
+    url: '/api/v1/materialType/all',
+    method: 'get'
+  })
+}
