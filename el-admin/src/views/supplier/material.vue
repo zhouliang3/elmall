@@ -112,8 +112,9 @@
         <el-form-item label="库存数量" prop="quantity">
           <el-input-number v-model="dataForm.quantity"  style="width: 300px;" :precision="3" :step="1" controls-position="right" :min="0" ></el-input-number>
         </el-form-item>
-        <el-form-item label="市场参考价" prop="marketRefPrice">
-          <el-input-number v-model="dataForm.marketRefPrice"  style="width: 300px;" :precision="3" :step="1" controls-position="right"  :min="0"></el-input-number>
+        <el-form-item label="参考价(元)" prop="marketRefPrice">
+          <el-input-number v-model="dataForm.marketRefPrice"  style="width: 300px;" :precision="3" :step="1" controls-position="right"  :min="0">
+          </el-input-number>
         </el-form-item>
         <el-form-item label="规格" prop="specs">
           <el-input
